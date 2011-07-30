@@ -9,6 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="viewport" content="user-scalable=no, width=device-width" />
+  <script type="text/javascript" src="jquery-mobile.js"></script>
   <script type="text/javascript">
     function BlockMove(event) {
       // Tell Safari not to move the window.
