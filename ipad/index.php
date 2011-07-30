@@ -28,13 +28,19 @@
     <div data-role="content">
       <p>Page content goes here.</p>
       <div style="text-align:center;">
-        Search: <input type="text"></input>
+        <input type="search"></input>
+        <button type="button" data-inline="true">Search</button>
       </div>
       <p>Popular searches this week: jobs, cloverfield monster, schools</p>
     </div>
 
-    <div data-role="footer">
-      <h4>Navigation? Utah.gov-esque shortcuts?</h4>
+    <div data-role="footer" style="text-align:center;">
+      <div data-role="controlgroup" data-type="horizontal">
+        <button type="button" data-type="horizontal">Residents</button>
+        <button type="button" data-type="horizontal">Visitors</button>
+        <button type="button" data-type="horizontal">Business</button>
+        <button type="button" data-type="horizontal">Government</button>
+      </div>
     </div>
   </div>
 </body>
