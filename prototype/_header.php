@@ -54,9 +54,11 @@
 	<section class="identity-nav">
       <h1 id="logo"><a href="#">NYC.gov</a></h1>
       
+	  <div class="tagline">The Official Website for New York City</div>
+
       <nav>
         <ul class="roles no_style">
-          <li class="gnav"><h2><a href="">Visitor</a></h2>
+          <li class="gnav" id="nav-visitors"><h2><a href="">Visitors</a></h2>
               <ul class="megamenu">
                 <li><a href="#">Information for residents goes here</a></li>
                 <li><a href="#">Information for residents goes here</a></li>
@@ -72,8 +74,8 @@
                 <li><a href="#">Information for residents goes here</a></li>
               </ul> 
           </li>
-          <li class="gnav"><h2><a href="#">311 Online</a></h2></li>
-          <li class="gnav"><h2><a href="#">My NYC</a></h2></li>
+          <li class="gnav" id="nav-311"><h2><a href="#">311 Online</a></h2></li>
+          <li class="gnav" id="nav-mynyc"><h2><a href="#">My NYC</a></h2></li>
         </ul>
       </nav>
       <div class="clear"></div>

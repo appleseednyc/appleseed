@@ -1,4 +1,4 @@
-  <div>
+  <div id="searchbox">
     <select id="findit" title="Tell us how we can help you today ..." class="chzn-select" multiple tabindex="6">
       <option value=""></option>
 
