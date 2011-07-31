@@ -1,0 +1,59 @@
+The jQuery Mobile "page" structure is optimized to support either single pages, or local internal linked "pages" within a page.
+
+The goal of this model is to allow developers to create websites using best practices — where ordinary links will "just work" without any special configuration — while creating a rich, native-like experience that can't be achieved with standard HTTP requests.
+
+Mobile page structure
+
+A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage of all of the framework's features. (Older devices with browsers that don't understand HTML5 will safely ignore the 'doctype' and various custom attributes.) In the 'head', references to jQuery, jQuery Mobile and the mobile theme CSS are all required to start things off:
+
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>NYC.gov 311</title> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+    <script>
+      var results = [];
+      function fetch(str) {
+        $.mobile.changePage( "#results", { transition: "slideup"} );
+        $.get('finder.json', function(data) {
+          console.log(data); });
+      }
+    </script>
+  </head> 
+  <body> 
+    
+    <div  data-role="page" id="top"> 
+      <div  data-role="header"><h1>NYC.gov 311</h1></div> 
+      <div  data-role="content">
+	<ul data-role="listview" data-theme="b">
+	  <li><a href="javascript:fetch('finder');">Find something</a></li>
+	  <li><a href="Transportation%2C%20Streets%20and%20Sidewalks">Transportation, Streets, and Sidewalks</a></li>
+	  <li><a href="Environment%20and%20Sanitation">Environment and Sanitation</a></li>
+	  <li><a href="Property%2C%20Buildings%20and%20Homes">Property, Buildings and Homes</a></li>
+	  <li><a href="Education%20and%20Employment">Education and Employment</a></li>
+	  <li><a href="Business%20and%20Finance">Business and Finance</a></li>
+	  <li><a href="Social%20Services">Social Services</a></li>
+	  <li><a href="Health%20and%20Medicine">Health and Medicine</a></li>
+	  <li><a href="Public%20Safety%20and%20Law">Public Safety and Law</a></li>
+	  <li><a href="Government%20and%20Civil%20Services">Government and Civil Services</a></li>
+	</ul>
+      </div> 
+      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+    </div>
+    
+    <div  data-role="page" id="results"> 
+      <div  data-role="header"><h1>NYC.gov 311</h1></div> 
+      <div  data-role="content"><p>this is where the results will show up</p></div> 
+      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+    </div>
+
+    <div  data-role="page" id="article"> 
+      <div  data-role="header"><h1>NYC.gov 311</h1></div> 
+      <div  data-role="content"><p>this is where the final content will appear</p></div> 
+      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+    </div>
+
+  </body>
+</html>
