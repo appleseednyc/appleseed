@@ -6,7 +6,7 @@
     Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov Mobile - Search</title>
+  <title>NYC.gov Mobile</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />

@@ -6,7 +6,7 @@
     Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov</title>
+  <title>NYC.gov Mobile</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -23,7 +23,7 @@
     }
   </script>
 </head>
-<body ontouchmove="BlockMove(event);">
+<body>
   <div data-role="page">
     <div data-role="header">
       <h1>NYC.gov Mobile</h1>
@@ -45,10 +45,10 @@
 
       <h3>Common topics and searches:</h3>
       <ul data-role="listview" data-inset="true">
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Batman</a></li>
-        <li><a href="#">Parking Tickets</a></li>
-        <li><a href="#">Bedbugs</a></li>
+        <li><a href="search.php?keyword=jobs">Jobs</a></li>
+        <li><a href="search.php?keyword=batman">Batman</a></li>
+        <li><a href="search.php?keyword=parking%20tickets">Parking Tickets</a></li>
+        <li><a href="search.php?keyword=bedbugs">Bedbugs</a></li>
       </ul>
 
       <h3>Highlights:</h3>
