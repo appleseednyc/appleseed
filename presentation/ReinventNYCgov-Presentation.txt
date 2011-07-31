@@ -65,6 +65,10 @@ Content:
 - API
 - Eliminates paperwork
 
+Speaker's notes:
+
+
+
 *** Slides 6 ***
 
 Topic: User Context
@@ -76,6 +80,7 @@ Content:
 - Application Friendly
 - SMS
 
+Speaker's notes:
 
 *** Slides 7 ***
 
@@ -87,6 +92,8 @@ Content:
 - Resident
 - Non-Resident
 
+Speaker's notes:
+
 *** Slides 8 ***
 
 Topic: The New Core
@@ -95,11 +102,15 @@ Content:
 
 (Screen shot of new NYC.gov.)
 
+Speaker's notes:
+
 *** Slides 9 ***
 
 Topic: The tourist...
 
 Content:
+
+Speaker's notes:
 
 
 *** Slides 10 ***
