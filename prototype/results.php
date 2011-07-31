@@ -13,63 +13,63 @@
     </div>
   
     <div id="grid-results">
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.  Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.  Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.  Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.  Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>
       
       
-      <div class="result">
+      <div class="search-item">
         <img src="assets/img/tmp_result.png" />
         <p>Morbi tellus nunc, egestas in pretium quis, convallis at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non egestas ante. Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.  Cras a augue elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim risus vel augue placerat imperdiet.</p>
       </div>

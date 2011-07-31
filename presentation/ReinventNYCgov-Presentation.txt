@@ -1,68 +1,208 @@
+Definitions
+Seed: user action / search query
+Core: is the API
+Skin: user centric wrapper
+
+-=-=- slides by number -=-=-
+
 *** Slides 1 ***
 
+Topic: A rotten apple
+
+Content: (Photo of a rotten apple.) Text: (In the lower left, "Team Apple Seed NYC"
+
+Speaker's notes: 
+
+NYC.gov's user interface and search is broken. We know this and this is why we are here. To illustrate this point, the NYC.gov search for "lost luggage" brought me to the DOT events calendar. Parking brought me to the Partnership for Parks. A search for schools returned the second result as Independent Budget office. This is one rotten apple.
 
 *** Slides 2 ***
 
+Topic: "The Seed"
+
+Content: (Photo of a seed.) Text: "Renewal"
+
+Speaker's notes:
+
+To grow a new apple, we must start from a seed. Within the context search on NYC.gov, resources take precedence over human written content. For a new apple to grow, search results must return resources not content.
 
 *** Slides 3 ***
+
+Topic: Modern alternatives
+
+Content: (screen shots of Utah.gov, Alpha.UK.gov, Search.USA.gov, my.FCC.gov, wdyl.com)
+
+Speaker's notes:
+
+Around the internets, government websites are starting a new. Curated content sites, weighed down with bureaucratic approval process and burdened with budget cuts, are seen as clunky, dated, and unhelpful. Customizable, constituent centric tools are taking their place. Search.USA.gov, Utah.gov, Alpha.UK.gov and my.FCC.gov are all constituent centric tools. 
 
 
 *** Slides 4 ***
 
+Topic: Our Goal
+
+Content:
+
+0 Breakfast
+1 Consistent UX
+2 Clean Ux
+3 Push & Pull interfaces (SMS, Shareablity, Trigger actions)
+4 Context aware search interfaces
+5 Participatory via commentablity
+
+Speaker's notes:
 
 *** Slides 5 ***
+
+Topic: Government desires / refined goals
+
+Content:
+
+- A site for the user that is simple
+- Search Centric
+- Personalized
+- ubiquitous
+- Push & Pull
+- API
+- Eliminates paperwork
+
+Speaker's notes:
+
 
 
 *** Slides 6 ***
 
+Topic: User Context
+
+Content:
+
+- Big Web
+- Little Web
+- Application Friendly
+- SMS
+
+Speaker's notes:
 
 *** Slides 7 ***
 
+Topic: Roll
+
+Content:
+
+- Gov 2 Gov
+- Resident
+- Non-Resident
+
+Speaker's notes:
 
 *** Slides 8 ***
 
+Topic: The New Core
+
+Content:
+
+(Screen shot of new NYC.gov.)
+
+Speaker's notes:
 
 *** Slides 9 ***
+
+Topic: The tourist...
+
+Content:
+
+Speaker's notes:
 
 
 *** Slides 10 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 11 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 12 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 13 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 14 ***
+
+Topic: The tourist...
+
+Content:
 
 
 
 *** Slides 15 ***
 
+Topic: The tourist...
+
+Content:
+
+
+
 
 
 *** Slides 16 ***
+
+Topic: ...
+
+Content:
+
+
 
 
 
 *** Slides 17 ***
 
+Topic: 
+
+Content:
+
+
+
 
 
 *** Slides 18 ***
+
+Topic: 
+
+Content:
+
+
 
 
 
 *** Slides 19 ***
 
+Topic: 
+
+Content:
+
+
+
 
 
 *** Slides 20 ***
+
+Topic: 
+
+Content:
+
+

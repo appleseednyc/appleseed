@@ -11,9 +11,14 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/public.css">
-  <script src="./assets/js/jquery-1.6.2.min.js"></script> 
+  <link rel="stylesheet" href="./assets/css/chosen.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+  <script src="./assets/js/chosen.jquery.js" type="text/javascript"></script>
   <script src="./assets/js/ui.js"></script> 
   <script src="./assets/js/jquery.masonry.min.js"></script>
+ 
+
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -69,3 +74,5 @@
       </ul>
     </div>
   </section>
+  
+<?php include("_footer.php"); ?>

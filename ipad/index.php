@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest">
 <!--
-    
+    NYC.gov for Tablets
+    David Huerta
+    Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov for Tablets</title>
+  <title>NYC.gov</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="viewport" content="user-scalable=no, width=device-width" />
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+  <script type="text/javascript" src="scripts/yplgeo.js"></script>
   <script type="text/javascript">
     function BlockMove(event) {
       // Tell Safari not to move the window.
@@ -26,25 +30,54 @@
     </div>
 
     <div data-role="content">
-      <p>Page content goes here.</p>
-      <div style="text-align:center;">
-        <input type="search"></input>
-        <button type="button" data-inline="true">Search</button>
+      <div style="background-image:url('midtown_sunrise.jpg');">
+        <h3 id="welcome">NYC alerts around your neighborhood:</h3>
+        <div data-role="collapsible" data-collapsed="true" data-theme="e">
+          <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
+          <p>G train being derpy again.</p>
+          <p>Kayne West blogged.</p>
+        </div>
+        <div style="text-align:center;">
+          <input type="search"></input>
+          <button type="button" data-inline="true">Search</button>
+        </div>
       </div>
-      <p>Popular searches this week: jobs, cloverfield monster, schools</p>
+
+      <h3>Common topics and searches:</h3>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Batman</a></li>
+        <li><a href="#">Parking Tickets</a></li>
+        <li><a href="#">Bedbugs</a></li>
+      </ul>
+
+      <h3>Highlights:</h3>
+      <div class="ui-grid-b" data-theme="b">
+          <div class="ui-block-a" data-theme="b">
+            FDNY Firefighters put out fire caused by meddling kids.
+          </div>
+      </div>
     </div>
 
     <div data-role="footer" style="text-align:center;">
-      <div data-role="controlgroup" data-type="horizontal">
-        <button type="button" data-type="horizontal">Residents</button>
-        <button type="button" data-type="horizontal">Visitors</button>
-        <button type="button" data-type="horizontal">Business</button>
-        <button type="button" data-type="horizontal">Government</button>
+      <div data-role="controlgroup" data-type="horizontal" style="margin-top:15px;">
+        <button type="button" data-type="horizontal" data-theme="a">Residents</button>
+        <button type="button" data-type="horizontal" data-theme="a">Visitors</button>
+        <button type="button" data-type="horizontal" data-theme="a">Business</button>
+        <button type="button" data-type="horizontal" data-theme="a">Government</button>
       </div>
     </div>
   </div>
 </body>
 <script type="text/javascript">
-   
+  yqlgeo.get('visitor',function(o) {
+    if (o.error) {
+      alert('No location found.');
+    } else {
+      $("#welcome").html("NYC.gov for " + o.place.name);
+      // At this point we should gather location-specific alerts for things like transit, orange alerts, etc.
+      //alert(o.place.name + ',' + o.place.country.content + ' (' + o.place.centroid.latitude + ',' + o.place.centroid.longitude + ')');
+    }
+  });
 </script>
 </html>

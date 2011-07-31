@@ -127,11 +127,16 @@ div#grid-results {
   margin-left: -13px;
 }
 
-.result {
+.search-item {
   width: 270px;
   float: left;
   background: #EEE;
   padding: 10px;
   margin-left: 15px;
   margin-bottom: 15px;
+}
+
+.home #findit {
+  width: 100%;
+  display: block;
 }
