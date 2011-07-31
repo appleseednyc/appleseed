@@ -41,8 +41,8 @@
       
       <nav>
         <ul class="roles no_style">
-          <li><h2><a href="">Residents</a></h2>
-              <!-- <ul>
+          <li class="gnav"><h2><a href="">Residents</a></h2>
+              <ul class="megamenu">
                 <li><a href="#">Information for residents goes here</a></li>
                 <li><a href="#">Information for residents goes here</a></li>
                 <li><a href="#">Information for residents goes here</a></li>
@@ -55,14 +55,14 @@
                 <li><a href="#">Information for residents goes here</a></li>
                 <li><a href="#">Information for residents goes here</a></li>
                 <li><a href="#">Information for residents goes here</a></li>
-              </ul> -->
+              </ul> 
           </li>
-          <li><h2><a href="#">Visitors</a></h2></li>
-          <li><h2><a href="#">Business</a></h2></li>
-          <li><h2><a href="#">Government</a><h2></li>
+          <li class="gnav"><h2><a href="#">Visitors</a></h2></li>
+          <li class="gnav"><h2><a href="#">Business</a></h2></li>
+          <li class="gnav"><h2><a href="#">Government</a><h2></li>
         </ul>
       </nav>
-    </div>
+      <div class="clear"></div>
   </header>
   
   <section class="alerts">

@@ -6,7 +6,6 @@
 header {
   background: url(../img/header_bg.png) repeat-x #EFEFEF;
   border-bottom: 1px solid #CCC;
-  overflow: hidden;
 }
 
 header h1,
@@ -63,14 +62,40 @@ nav li.search a {
 }
 
 section.alerts {
+  clear: both;
   background: #EEEEEE;
   padding: .2em 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .home ul {
+  position: relative;
+  z-index: 55;
   margin-left: 0;
   padding-left: 0;
+}
+
+.home ul.megamenu {
+  position: absolute;
+  padding: 1em;
+  background: #444;
+  margin-top: -10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.home nav li:hover > .megamenu {
+  display: block;
+}
+
+.home ul.megamenu li a {
+  color: #EFEFEF !important;
+  text-shadow: -1px 0 0 #000;
+  float: left;
+  width: 220px;
+  line-height: 1.1em;
 }
 
 section.alerts ul {
