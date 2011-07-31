@@ -1,11 +1,3 @@
-The jQuery Mobile "page" structure is optimized to support either single pages, or local internal linked "pages" within a page.
-
-The goal of this model is to allow developers to create websites using best practices — where ordinary links will "just work" without any special configuration — while creating a rich, native-like experience that can't be achieved with standard HTTP requests.
-
-Mobile page structure
-
-A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage of all of the framework's features. (Older devices with browsers that don't understand HTML5 will safely ignore the 'doctype' and various custom attributes.) In the 'head', references to jQuery, jQuery Mobile and the mobile theme CSS are all required to start things off:
-
 <!DOCTYPE html> 
 <html> 
   <head> 
@@ -13,7 +5,14 @@ A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage o
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+<!-- <style>
+      .ui-page {
+        background: black;
+    }
+      </style>
+-->
     <script>
+
       var results;
       var article;
 
@@ -25,10 +24,20 @@ A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage o
                dataType: 'json',
                async: false,
                success: function(data) { article = data; } });
-      // article = [{"description": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "description_html": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "url": "http:\/\/www.nyc.gov\/apps\/311\/allServices.htm?requestType=topService&serviceName=Find+a+Medicaid+Office&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click", "service_name": "Find a Medicaid Office", "web_actions": [{"url": "http:\/\/www.nyc.gov\/html\/hra\/html\/directory\/public_health.shtml", "type": "Webpage", "label": "Get information about Medicaid and other public health insurance programs."}, {"url": "", "type": "Webpage", "label": "Use the ACCESS NYC benefit tool to:"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/AutomaticLogon.jsp", "type": "Webpage", "label": "Pre-screen for Medicaid and other programs"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/en_US\/IHSS_howToApplyHomePage.do?programInfoID=3&__o3rpu=IHSS_howToApplyProgramListHomePage.do", "type": "Webpage", "label": "Learn how to apply for Medicaid"}], "brief_description": "Find a Medicaid office.", "expiration": "12-31-2099T00:00:00Z", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "categories": [{"category_name": "Health and Medicine"}]}];
-      $('#article-content').children().detach();
+      
+      //article = [{"description": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "description_html": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "url": "http:\/\/www.nyc.gov\/apps\/311\/allServices.htm?requestType=topService&serviceName=Find+a+Medicaid+Office&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click", "service_name": "Find a Medicaid Office", "web_actions": [{"url": "http:\/\/www.nyc.gov\/html\/hra\/html\/directory\/public_health.shtml", "type": "Webpage", "label": "Get information about Medicaid and other public health insurance programs."}, {"url": "", "type": "Webpage", "label": "Use the ACCESS NYC benefit tool to:"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/AutomaticLogon.jsp", "type": "Webpage", "label": "Pre-screen for Medicaid and other programs"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/en_US\/IHSS_howToApplyHomePage.do?programInfoID=3&__o3rpu=IHSS_howToApplyProgramListHomePage.do", "type": "Webpage", "label": "Learn how to apply for Medicaid"}], "brief_description": "Find a Medicaid office.", "expiration": "12-31-2099T00:00:00Z", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "categories": [{"category_name": "Health and Medicine"}]}];
+      $('#article-content').empty();
       $('#article-title').text(article[0]['service_name']);
       $('#article-content').append(article[0]['description_html']);
+      
+      var action_buttons = $('<div data-role="controlgroup" data-theme="e"></div>');
+      $('#article-content').append(action_buttons);
+      $.each(article[0]['web_actions'], function(index, value) {
+        action_buttons.append($('<a href="' + article[0]['web_actions'][index]['url'] + '" data-icon="arrow-r" data-role="button">' + article[0]['web_actions'][index]['label'] + '</a>'));
+      });
+
+      $('#article').page();
+      $('#article').page('destroy').page();
       $.mobile.changePage( "#article", { transition: "slideup"} );
       }
 
@@ -39,11 +48,11 @@ A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage o
                  async: false,
                  dataType: 'json'});
        
-        // results = [{"service_name": "Find a Medicaid Office", "brief_description": "Find a Medicaid office.", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Museum", "brief_description": "Find a museum.", "id": "20040804-CF9ED7F4-E65E-11D8-B168-90E859C4E89A", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Adult Immunization Clinic", "brief_description": "Find a clinic for adult immunizations.", "id": "20100309-9C4DEB68-2B97-11DF-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Public Ice Skating Rink", "brief_description": "Get information about public ice skating rinks.", "id": "20031215-7EA34EB8-2F19-11D8-9FC7-C2B665DB9DD7", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Sexually Transmitted Disease Test and Treatment", "brief_description": "Get STD testing and treatment.", "id": "20110214-6B3278D8-3883-11E0-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Parent Coordinator", "brief_description": "Find a Parent Coordinator in a public school to address parent concerns.", "id": "2003-09-04-13-00-00_000010083f576ccc4000e88b", "expiration": "2099-12-31T00:00:00Z"}];
+       // results = [{"service_name": "Find a Medicaid Office", "brief_description": "Find a Medicaid office.", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Museum", "brief_description": "Find a museum.", "id": "20040804-CF9ED7F4-E65E-11D8-B168-90E859C4E89A", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Adult Immunization Clinic", "brief_description": "Find a clinic for adult immunizations.", "id": "20100309-9C4DEB68-2B97-11DF-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Public Ice Skating Rink", "brief_description": "Get information about public ice skating rinks.", "id": "20031215-7EA34EB8-2F19-11D8-9FC7-C2B665DB9DD7", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Sexually Transmitted Disease Test and Treatment", "brief_description": "Get STD testing and treatment.", "id": "20110214-6B3278D8-3883-11E0-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Parent Coordinator", "brief_description": "Find a Parent Coordinator in a public school to address parent concerns.", "id": "2003-09-04-13-00-00_000010083f576ccc4000e88b", "expiration": "2099-12-31T00:00:00Z"}];
         // We remove the existing content.
-        $('#results-content').children().detach();
+        $('#results-content').empty()
         $('#results-title').text(str);
-        var the_list = $('<ul data-filter="true" data-role="listview" data-theme="b"></ul>');
+        var the_list = $('<ul data-filter="true" data-role="listview" data-theme="c"></ul>');
         $('#results-content').append(the_list);
         $.each(results, function(index, value) {
           the_list.append($('<li><a href="javascript:gotoArticle(\'' + results[index]['id'] + '\')">' + results[index]['service_name'] + '</a></li></ul>'));
@@ -56,10 +65,12 @@ A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage o
   </head> 
   <body> 
     
-    <div  data-role="page" id="top"> 
+    <div  data-role="page" id="top">
       <div  data-role="header"><h1>NYC.gov 311</h1></div> 
+<!--       <div align="center"><img src="nyc-land.jpg"/></div> -->
       <div  data-role="content">
-	<ul data-filter="true" data-role="listview" data-theme="b">
+	<!-- note: this should be done via JSON and Javascript. -->
+	<ul data-filter="false" data-role="listview" data-theme="c">
 	  <li><a href="javascript:goto('finder');">Find something</a></li>
 	  <li><a href="javascript:goto('Transportation%2C%20Streets%20and%20Sidewalks')">Transportation, Streets, and Sidewalks</a></li>
 	  <li><a href="javascript:goto('Environment%20and%20Sanitation')">Environment and Sanitation</a></li>
@@ -72,19 +83,19 @@ A jQuery Mobile site must start with an HTML5 'doctype' to take full advantage o
 	  <li><a href="javascript:goto('Government%20and%20Civil%20Services')">Government and Civil Services</a></li>
 	</ul>
       </div> 
-      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+      <div  data-role="footer" data-id="the_footer" data-position="fixed"><h4>&copy; NYC.gov, 2011</h4></div> 
     </div>
     
     <div  data-add-back-btn="true" data-role="page" id="results"> 
       <div data-role="header"><h1 id="results-title">NYC.gov 311</h1></div> 
       <div  data-role="content" id="results-content"><p>this is where the results will show up</p></div> 
-      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+      <div  data-role="footer" data-id="the_footer" data-position="fixed"><h4>&copy; NYC.gov, 2011</h4></div> 
     </div>
 
     <div  data-add-back-btn="true" data-role="page" id="article"> 
       <div  data-role="header"><h1 id="article-title">NYC.gov 311</h1></div> 
       <div  data-role="content" id="article-content"><p>this is where the final content will appear</p></div> 
-      <div  data-role="footer"><h4>Copyright New York City, 2011</h4></div> 
+      <div  data-role="footer" data-id="the_footer" data-position="fixed"><h4>&copy; NYC.gov, 2011</h4></div> 
     </div>
 
   </body>

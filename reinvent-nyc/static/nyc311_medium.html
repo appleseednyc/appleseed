@@ -1,0 +1,328 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+  <style>
+    /* RESET */
+    html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a,
+    font, img, dl, dt, dd, ol, ul, li, legend, table, tbody, tr, th, td 
+    {margin:0px;padding:0px;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;list-style:none;}
+    a img {border: none;}
+    ol li {list-style: decimal outside;}
+    fieldset {border:0;padding:0;}
+    
+    body { font-family: sans-serif; font-size: 1em; }
+    
+    div#container { width: 780px; margin: 0 auto; padding: 1em 0;  }
+    p { margin: 1em 0; max-width: 700px; }
+    h1 + p { margin-top: 0; }
+    
+    h1, h2 { font-family: Georgia, Times, serif; }
+    h1 { font-size: 2em; margin-bottom: .75em; }
+    h2 { font-size: 1.5em; margin: 2.5em 0 .5em; border-bottom: 1px solid #999; padding-bottom: 5px; }
+    h3 { font-weight: bold; }
+    
+    ul li { list-style: disc; margin-left: 1em; }
+    ol li { margin-left: 1.25em; }
+    
+    div.side-by-side { width: 100%; margin-bottom: 1em; }
+    div.side-by-side > div { float: left; width: 50%; }
+    div.side-by-side > div > em { margin-bottom: 10px; display: block; }
+    
+    a { color: orange; text-decoration: underline; }
+    
+    .faqs em { display: block; }
+    
+    .clearfix:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      clear: both;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    
+    footer {
+      margin-top: 2em;
+      border-top: 1px solid #666;
+      padding-top: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="chosen/chosen.css" />
+</head>
+<body>
+
+
+  <div style="margin-left: 50px;">
+  <img src="http://www.nyc.gov/portal/images/headers/nycgov/banner_bnx_botanical.jpg"/>
+
+  <br/><br/>
+
+  <div>
+    <select title="Tell us how we can help you today ..." style="width:350px;" class="chzn-select" multiple tabindex="6">
+      <option value=""></option>
+
+
+<optgroup label="Find something">
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Medicaid+Office&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a Medicaid office.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Museum&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a museum.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Adult+Immunization+Clinic&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a clinic for adult immunizations.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Ice+Skating+Rink&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about public ice skating rinks.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sexually+Transmitted+Disease+Test+and+Treatment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get STD testing and treatment.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Parent+Coordinator&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a Parent Coordinator in a public school to address parent concerns.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Zoo+or+Aquarium&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a zoo or aquarium.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Quit+Smoking+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help to quit smoking.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=HIV+Test&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get HIV counseling and testing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Jail+Release+Services&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about health care, housing assistance, employment assistance, substance abuse treatment, case management, and other services for formerly incarcerated people.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Playground&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public playground.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Child+Health+Clinic&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a Child Health Clinic.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Park&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a park.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Library+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a public library.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Earned+Income+Tax+Credit+(EITC)+and+Tax+Preparation+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help preparing your tax returns and claiming the Earned Income Tax Credit (EITC).</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=After+School+Program+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about free educational or recreational activities for kids, find an after school program, or make a complaint about a program.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Health+Screenings&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make an appointment to get screened for cancer, heart disease, or other chronic diseases.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Business+City+Contract+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help for a small business owner who wants to work with the City government.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Food+Pantry+or+Soup+Kitchen&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a place offering food for people in need.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Recreation+Center&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a recreation center.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+NYC+Business+Solutions+Center&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">NYC Business Solutions Centers help businesses start, operate and expand.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Immigrant+Service+Directory+of+Community+Based+Organizations&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a directory of community-based organizations that provide immigrant services.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pre-Kindergarten+(UPK)+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about Pre-Kindergarten or make a complaint about a facility or worker.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Financial+Education+Network+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about Financial Empowerment Centers, classes, workshops, counseling, and materials.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pregnancy+Test&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get pregnancy testing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Boat+Marina&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a boat marina run by the City.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Beach&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public beach.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Botanical+Garden&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a botanical garden.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Tuberculosis+Information+and+Treatment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about tuberculosis screening and treatment.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Barbecue+Area+in+a+Park&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a place in a park where barbecuing is allowed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Hepatitis+Test&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Hepatitis B or C testing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Disability+Rent+Increase+Exemption+(DRIE)+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program that freezes rent increases for a renter with a disability. Get application assistance or check status.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Gynecologist+Referral&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get general gynecology services.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Job+Preparation+and+Training&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Professional employment and training services that prepare you to succeed in job searches and careers.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Nurse+Home+Visit+Information+for+Pregnant+Teens+and+Women&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a home visit from a nurse to help a teen or woman who is pregnant for the first time.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Swimming+Pool&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public swimming pool.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Food+Stamp+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for Food Stamps or make a complaint. Get information about how a retailer can participate in the Food Stamp Program.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Hepatitis+Treatment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Hepatitis B or C treatment.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Prenatal+Care&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get care during pregnancy to keep you and your baby healthy.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Golf+Course&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public golf course.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Performing+Arts+Venue&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Information about places that hold dance, music, or theater performances.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+an+Historical+Society&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find an historical society.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Parking+Lot&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public parking lot.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Hepatitis+Vaccination&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Hepatitis A or B vaccination.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Hospital&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public hospital.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=HomeBase+Program+to+Prevent+Homelessness+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the HomeBase homelessness prevention program.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Child+Care+Financial+Assistance+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or find out if you are eligible for City-funded child care programs.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Emergency+Contraception+(Plan+B)&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get Plan B, also known as the morning-after pill.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Birth+Control&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get birth control.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Mammogram+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information on low or low-cost mammograms and breast examinations.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=State+and+Federal+Park+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about state and federal parks or report a maintenance problem.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Business+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help starting or expanding a small business.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Abortion&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get abortion counseling and services.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Sprinkler+Area+in+a+Park&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find an area in a park with water sprinklers.</option>
+</optgroup>
+<optgroup label="Transportation, Streets, and Sidewalks">
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+Cross+Streets&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find the cross streets for an address.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Collapsed&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a sidewalk that has collapsed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Amtrak+Train+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about Amtrak trains.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Clogged+or+Blocked+Culvert+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a drain underneath a road that requires cleaning or is blocked.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Select+Bus+Service+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the Bus Rapid Transit (BRT) system.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Long+Island+Rail+Road+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about the Long Island Rail Road.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Planned+Bridge,+Highway,+and+Street+Closure+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about bridge, highway, and street closures.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Subway+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a subway train, station, service, construction, or employee.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bikes+in+Buildings+&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the Bike Access Bill.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bag+of+Garbage+or+Loose+Debris+in+Street+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a stray bag of garbage or loose debris in a driving or biking lane of a street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Airport+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about John F. Kennedy, LaGuardia, or Newark airport, AirTrain, and other ground transportation options.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Buy+a+Parking+Card&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about parking cards and where to buy them.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Expedited+Sidewalk+Repair+Program&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get your sidewalk repaired in Queens.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Public+Transportation+Lost+and+Found&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an item lost or found on a public train, subway, or bus.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Tow+Truck+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a tow truck company or driver.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Shed+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to construct a sidewalk shed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Biking,+Rollerblading,+or+Skating+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem caused by people biking, riding motorized scooters, rollerblading, or skating.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Meter+Information+or+Comment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about single-space parking meters. Comment on Sunday regulations for parking meters.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Truck+and+Commercial+Vehicle+Permits&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a truck or commercial vehicle permits.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bus+Stop+Shelter+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a bus shelter. Request a new bus stop shelter or relocation of an existing shelter.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Traffic+Court+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a traffic violation case.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Garage+or+Parking+Lot+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a privately owned garage or parking lot.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Metropolitan+Transit+Authority+Bus+Schedule+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a Metropolitan Transportation Authority (MTA) bus that does not follow the posted schedule.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Ownership+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about land use for private streets. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Revocable+Consent+Application&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for permission to install or maintain a structure affecting the street or sidewalk.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Cleaning+Enforcement+Information+or+Sticker+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about when summonses may be issued for dirty sidewalks and gutters. Request a sticker listing enforcement hours.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Long+Island+Bus+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about Long Island Bus service. Report lost or found items.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=MTA+City+Ticket+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a discount weekend travel program within New York City.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Dirty+Yard+or+Alley+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report of an unclean or untidy yard, alley, or court that is visible from the street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Newsrack+Box+Information+and+Registration&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information and registration forms for newsrack owners or operators.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=High+Occupancy+Vehicle+(HOV)+Lane+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about traffic lanes reserved for buses and passenger vehicles with multiple people.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pedestrian+Ramp+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a damaged pedestrian ramp.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Taxi+GPS+or+Credit+Card+Installation+Complaint+or+Compliment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint or compliment about the Taxi and Limousine Commission's taxi cab technology systems.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Manhole+Cover+Missing&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a missing manhole cover on a street or highway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Commercial+Vehicle+Parked+in+Residential+Driveway+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report of a commercial vehicle parked in a residential driveway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Naming+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about having a City street co-named.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Vehicle+Registration+and+License+Plates&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about vehicle registration and license plates.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Ponding+Water+on+Street+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report of water collecting on a street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Sign+Information+and+Locator&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Look up parking signs located on any City street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Group+Ride+Vehicle+Pilot+Program+in+Brooklyn+and+Queens&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about group rides in areas of Brooklyn and Queens where bus service was reduced.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Muni-Meter+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a request about a Muni-Meter. Report a problem with a Muni-Meter.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pay+a+Parking+Ticket&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Pay a parking ticket or request a payment plan.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sign+Blocked+by+Tree+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a tree that is covering a street or highway sign from view.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about sidewalk maintenance or report a sidewalk condition.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bicycle+Information+and+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get free bike maps, helmets, transit access, parking, rules and safety information.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pothole+or+Other+Street+Surface+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report potholes and other conditions making the roadway uneven, such as cave-ins, defective manholes and street hardware issues.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Lost+and+Found&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report items that have been lost or found in a yellow taxi.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Alternate+Side+Parking&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get alternate side parking information and status.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+and+Camera+Violations+Refund+Form&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a refund for overpayment of parking, red light camera, or bus lane camera violations and fees.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Vehicle+Accident+Report+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a record of an automobile accident.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Curb+Cut+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to create or modify a curb cut.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Taxi+or+For-Hire+Vehicle+Driver+or+Licensee+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help or make a complaint if you are a taxi or for-hire vehicle licensee.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Cellar+Door+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request permission to install a new door or report a damaged sidewalk cellar door.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Violation+Information+and+Removal&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about sidewalk violations, request a sidewalk inspection, or get a violation removed or dismissed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Summer+Streets&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about car-free street events in New York City.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Unsafe+Sidewalk+Construction&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">The City accepts reports of unsafe conditions at sites where the repair or new construction of a sidewalk is underway. Complaints about unprotected sidewalk openings are accepted. If the condition threatens to cause an accident, call 911.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Dispatched+Yellow+Taxi+or+Car+Service+Request+for+Passengers+in+Wheelchairs&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">New programs to dispatch accessible taxis and For-Hire-Vehicles are under discussion.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=File+Car+Accident+Report+with+the+Department+of+Motor+Vehicles&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about how to file a report of an auto accident that caused property damage but not injury.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Staten+Island+Railway+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about the Staten Island Railway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=AdoptAHighway&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about sponsoring highway clean-up.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Carpool+and+Ridematching+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about ridematching services and transportation alternatives.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Taxi+Driver+License&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a license to drive a taxi.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Dirty+Sidewalk+or+Gutter+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report that a sidewalk or gutter, including 18 inches into the street, is unclean.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Car+Rental+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a car rental agency.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Banner+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to hang a banner over a sidewalk.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Meter+Installation+or+Removal+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request the installation, relocation or removal of a parking meter.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+Jersey+Transit+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the New Jersey Transit bus and train system.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Towed+Vehicle&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a vehicle that may have been towed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Metal+Plate+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a shifted or noisy steel plate on a street or highway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Municipal+Parking+Garage+or+Lot+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a City parking garage or lot.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Staten+Island+Ferry+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about the Staten Island Ferry. Report lost or found items.</option>
+<option data-link="">Report a blocked sidewalk or street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Tunnel+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about a tunnel.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Driver+License&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a driver's license.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Highway+Sign+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report that a highway sign is missing, broken, blocked, dirty, or incorrect.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Garage+or+Driveway+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to construct or alter a garage or driveway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Highway+Surface+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report conditions making the roadway uneven, such as potholes, defective manholes and other utility hardware issues. Request highway resurfacing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Red+Light+Camera+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about red light cameras, make a request or complaint, or pay or fight a ticket.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Light+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request street light repair, installation or relocation. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a yellow taxi driver's rudeness, unsafe driving, or refusal to comply with a request, or a problem with vehicle maintenance.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Traffic+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about traffic conditions for the New York metro area.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Traffic+Trend+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about traffic patterns or trends.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Subway+or+Bus+Delay+Verification+for+Employers&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a letter for your employer verifying a public bus or subway was delayed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Access-A-Ride+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about paratransit transportation for people with disabilities or make a complaint about Access-A-Ride.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Car+Accident&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a car accident.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bus+or+Subway+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about City buses and subways.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Repair+Protest&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a sidewalk that the City repaired.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Transit+Ticket+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about fighting or paying a ticket received inside the New York City Transit system.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=PATH+Train+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about train service from Manhattan to Hoboken, Harrison, Jersey City, and Newark.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Metro-North+Railroad+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about the Metro-North Railroad system.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Abandoned+Vehicle&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an abandoned vehicle on public or private property.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Speed+Limit+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the speed limit on streets and highways.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Washing+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about sidewalk washing regulations.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Missing+Vehicle+Parked+Blocking+a+Driveway&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a vehicle that was towed because it was blocking access to a driveway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Painting+Street+or+Sidewalk+for+Water+Shut-Off&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about painted marks on streets and curbs indicating upcoming water shut-off.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Hearing+on+Taxi+Limousine+Commission+Violation&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about taxi hearings and adjudications.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Meter+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a parking meter that is damaged, defective, or located too close to a fire hydrant.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Green+Light+for+Midtown+Program&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about closures of Broadway to vehicles in Times Square and Herald Square.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+York+City+Pedestrian+Safety+Study&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program to improve pedstrian safety and reduce traffic fatalities.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Public+Transit+Map+or+Brochure&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a map of the Metropolitan Transportation Authority (MTA) mass transit system, including bus and subway routes.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Active+Street+or+Sidewalk+Construction+Permit+Status&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Check the status of an active street construction or sidewalk repair permit.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Surplus+Auto+Auction+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the City auctions of used cars and parts.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Reckless+Driving&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report reckless or dangerous driving in progress.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Accident+with+Injury&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an accident that just occurred and caused injury.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Public+Transportation+Handicapped+Accessibility+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about public transportation for people with disabilities.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=MTA+Bus+Complaint+or+Compliment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint or compliment about a Metropolitan Transportation Authority (MTA) employee, bus or train.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Vehicle+Storage+on+Residential+Property+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report the storage of vehicles on residential property or a vacant lot.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=E-ZPass+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about E-ZPass.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+Jersey+Transit+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about New Jersey Transit.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Valve+Cover+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a missing or damaged sidewalk valve cover.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Fare+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about taxi rates.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Manhole+Installation+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to install a manhole in the street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+York+Marine+Terminal+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a marine terminal.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Token+Refund+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about refunds for old subway and bus tokens.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Booting+Company+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a business that places wheel locks on illegally parked cars.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Banner+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to hang a banner over a street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Staircase+Defect&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem on a sidewalk stairway that connects two different street levels.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Traffic+Ticket+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help with traffic violations and tickets.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Port+Authority+Bus+Terminal+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the Port Authority Bus Terminal and the George Washington Bus Station.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Ticket+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help with parking tickets.</option>
+<option data-link="">Apply for a parking permit, get information and assistance, or report misuse of a parking permit. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Construction+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to open the street for construction or store construction material on a street or sidewalk.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Trees+and+Sidewalks+Repair+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program to repair qualifying sidewalks severely damaged by curbside tree roots in front of one, two, and three family homes.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Driver+Compliment&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Compliment the driver of a yellow taxi.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Bridge+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about a bridge.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Curb+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a curb that is damaged, painted, or illegally cut for a driveway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Fight+a+Parking+Ticket&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a hearing to fight a parking ticket, or appeal a hearing if you were found guilty.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Group+Ride+Pilot+Program&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Pilot program to share a taxi.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Fight+an+ECB+Ticket&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Fight a ticket issued for violation of a City law protecting health, safety or a clean environment.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+or+Street+Grating+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a sidewalk or street grating that is defective, damaged, or missing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Permit+-+Clergy+Brochure&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Download a clergy parking permit brochure (PDF).</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Second+Avenue+Subway+Construction&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Blasting and construction information for the Second Avenue Subway project on the Upper East Side of Manhattan.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+Sidewalk+Installation+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about installing a sidewalk in a place where a sidewalk has never been built.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Vehicle+Blocking+Driveway+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a driveway blocked by a vehicle.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Ticket+Assistance+for+Diplomat&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Help with parking tickets given to diplomatic vehicles.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Commercial+Overpayment+Parking+Ticket+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program that helps businesses with many vehicles manage parking ticket payments.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Emergency+Traffic+Condition&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a dangerous or hazardous traffic situation, including debris on a highway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=NYC+Delivery+Solutions+Stipulated+Fine+Program&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about reduced parking fines for businesses that make quick deliveries.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Not+Swept+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a poor or missed street cleaning.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+York+City+Cycling+Map&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a bicycle map for New York City.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Conditions+Observation+Unit+Team+(SCOUT)+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about the Street Conditions Observation Unit Team (SCOUT) program.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Weekend+Street+Closure+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about streets that are temporarily closed on weekends because of construction or special events.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=MetroCard+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about subway and bus MetroCards including special MetroCards for students, seniors, and the disabled.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Construction+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to repair a broken sidewalk or install a new one.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Traffic+or+Pedestrian+Signal+Request+or+Condition&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a stoplight, pedestrian signal, or school crossing signal. Request the installation of a new signal.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Sign+Defect+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a sign that is broken, defaced, incorrect, dangling, or missing.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Rules+and+Regulations+-+Tractor-Trailer&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get informaiton about parking tractor-trailers overnight on residential streets.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pedestrian+Signal+with+Walk+and+Don't+Walk+Displaying&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a pedestrian signal that displays both Walk and Don't Walk symbols at the same time.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=THRU+Streets+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program to reduce traffic congestion, increase pedestrian safety, and improve travel time in Manhattan.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Finance+Business+Center&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a business center where you can pay a parking ticket or property taxes.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Missing+Vehicle+Moved+Due+to+Accident,+Filming,+Street+Event,+or+Construction&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a vehicle that has been moved due to an accident, filming, a street event, or construction.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Newsrack+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with a sidewalk newsrack.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Illegal+Parking+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an illegally parked vehicle.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Alternate+Side+Parking+Change+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request for sign or regulation change, or for street cleaning on a new block.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Airline+Safety+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about airline safety.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Roosevelt+Island+Tramway+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information or make a complaint about the Roosevelt Island Tramway.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Seized+Vehicle+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a vehicle the police seized for drunk driving or other criminal activity.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Medallion+Sale+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about yellow taxi medallion sales.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Airline+Ticket+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get statistics or make a complaint about air travel.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Lighting+Permit&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a permit to install temporary lighting to a street light pole for a holiday, festival, event, or another use.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Public+Parking+Lot&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a public parking lot.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Ticket+Rental+Vehicle+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program that lets vehicle rental companies make renters pay their tickets.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=MetroCard+Vending+Machine+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a MetroCard vending machine.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Car+Service,+Limousine,+or+Ambulette+Driver+License&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a license to drive a car service car, limousine, commuter van, or paratransit vehicle.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Truck+Route+and+Regulation+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about truck routes and regulations. Report a truck driving on a road where it is not allowed.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+or+Highway+Line+Marking+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a problem with street or highway traffic line markings. Request a new street crosswalk. Get information about pre-construction pavement markings. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Yellow+Taxi+Insurance+Information+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request yellow taxi insurance information after an accident involving a taxi.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=New+York+City+Street+Design+Manual&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a manual about how to improve safety and quality of life in City streets.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Unsafe+Street+Construction&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a dangerous condition at a construction site on a street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Department+of+Motor+Vehicles+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about Department of Motor Vehicles office locations and hours. Make a complaint about an office or employee.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Unsafe+Highway+Construction&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an unsafe condition at a highway construction site. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Private+Ferry+Service+Information+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get schedules and routes or make a complaint about the New York Water Taxi, New York Waterway, or Seastreak.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Card+Not+Received+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report that you did not receive a parking card in the mail.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Parking+Ticket+Refund+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a refund for overpayment of parking tickets and fees. </option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Fleet+Program+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about a program that helps businesses organize and track parking tickets.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Traffic+Flow+Change+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a change to the direction of traffic on a street.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Item+or+Animal+in+Catch+Basin+or+Manhole&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report an item or animal that has fallen into a catch basin.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Lost+Airline+Luggage+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report lost luggage.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Metropolitan+Transit+Authority+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about the Metropolitan Transportation Authority (MTA).</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Sidewalk+Repair+Payment+Plan+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request a payment plan for sidewalk repairs billed by the City.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Car+Service,+Limousine,+or+Ambulette+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Make a complaint about a car service company's driver, vehicle, service, or office staff.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Crash+Barrier+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a defective or missing crash cushion, guard rail or concrete barrier.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Overgrown+Grass+or+Weeds+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report overgrown grass or weeds on highways, traffic islands, or medians.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Catch+Basin+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Report a storm drain that is missing its cover, clogged, sunken, raised, damaged, or defective.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Advertise+with+the+Metropolitan+Transportation+Authority&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about advertising with the Metropolitan Transportation Authority (MTA).</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Street+Sign+Request&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request the installation, removal, or relocation of a street sign. Purchase a personalized street sign.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Car+Seat+Inspection&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get a free child car seat safety check.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Right+Turn+on+Red+Request+in+Staten+Island&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request Right Turn on Red permission at a specific intersection.</option>
+<option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Speed+Reducer+Request+or+Complaint&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Request that the City install, repair, or remove a speed hump in the street.</option>
+</optgroup>
+    </select>
+  </div>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  <script src="chosen/chosen.jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(".chzn-select").chosen();
+    $('.chzn-select').change(function() {
+      $("select option:selected").each(function () {
+        console.log($(this));
+        window.location.href=$(this).attr('data-link');
+      });
+      });
+</script>
+</body>
