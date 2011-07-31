@@ -23,7 +23,9 @@ Content: (Photo of a seed.) Text: "Renewal"
 
 Speaker's notes:
 
-To grow a new apple, we must start from a seed. Within the context search on NYC.gov, resources take precedence over human written content. For a new apple to grow, search results must return resources not content.
+To grow a new apple, we must start from a seed. The current NYC.gov layout & primary navigation contradicts the City's own report for Digital Future. No where on NYC.gov will we find the top 10 things constituents are seeking. As time passes, how do we build a site that adapts to the user context? 
+
+Within the context of search, the City's own data proves resources take precedence over human written content. For a new apple to grow, search results must return resources not content. Moving forward the site must return result based on intent.
 
 *** Slides 3 ***
 
@@ -33,23 +35,26 @@ Content: (screen shots of Utah.gov, Alpha.UK.gov, Search.USA.gov, my.FCC.gov, wd
 
 Speaker's notes:
 
-Around the internets, government websites are starting a new. Curated content sites, weighed down with bureaucratic approval process and burdened with budget cuts, are seen as clunky, dated, and unhelpful. Customizable, constituent centric tools are taking their place. Search.USA.gov, Utah.gov, Alpha.UK.gov and my.FCC.gov are all constituent centric tools. 
+Around the internets, government websites are starting a new. Curated content sites, weighed down with bureaucratic approval process and burdened with budget cuts, are seen as clunky, dated, and unhelpful. Customizable, constituent centric tools are taking their place. Search.USA.gov, Utah.gov, Alpha.UK.gov and my.FCC.gov are all constituent centric tools. These sites return results based on intent and desire.
 
 
 *** Slides 4 ***
 
-Topic: Our Goal
+Topic: Our Team's Goal
 
 Content:
 
 0 Breakfast
-1 Consistent UX
-2 Clean Ux
+1 Consistent User Experience
+2 Clean User Experience
 3 Push & Pull interfaces (SMS, Shareablity, Trigger actions)
 4 Context aware search interfaces
 5 Participatory via commentablity
 
 Speaker's notes:
+
+In redesigning NYC.gov, Team Apple Seed's goals are simple. We will win by creating a consistent and clean user interface, offer push and pull systems with context aware search. Note, these systems don't just offer up content. They are a foundation for constituent digital services. Ranging from 311 online rate and report features to a constantly shifting and adapting NYC.gov based on what constituent needs.
+
 
 *** Slides 5 ***
 
@@ -67,30 +72,37 @@ Content:
 
 Speaker's notes:
 
+Through out the last 24 hours, we asked every government official for their input and their advice on our platform. We received a frank viewpoint. They said, "Make it simple", "Make it Personalizable", "Look at 311", "Make it Gov 2 Gov", and "the Mayor like his iPad".
 
 
 *** Slides 6 ***
 
-Topic: User Context
+Topic: User Context & Roll
 
 Content:
 
+User Context
 - Big Web
 - Little Web
 - Application Friendly
 - SMS
 
-Speaker's notes:
-
-*** Slides 7 ***
-
-Topic: Roll
-
-Content:
-
+User Roll
 - Gov 2 Gov
 - Resident
 - Non-Resident
+
+
+Speaker's notes:
+
+To accomplish our goals we sought out four user context: the big web, aka the desktop; the little web, the mobile browser; a restful application interface, and a short messaging service. We combined this with the three basic user rolls: Gov2Gov, a la 311; an NYC Resident; a non-NYC resident. 
+
+*** Slides 7 ***
+
+Topic: ((EMPTY!!!))
+
+Content:
+
 
 Speaker's notes:
 
