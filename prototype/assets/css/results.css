@@ -7,7 +7,7 @@ div#grid-results {
 .search-item {
   width: 240px;
   float: left;
-  border-top:1px solid #999;
+  border-top:1px solid #00BCE0;
   background: #F6F6F6;
   padding: 15px;
   margin-left: 15px;
@@ -41,7 +41,7 @@ div#grid-results {
 	background:#F6F6F6 url(../img/icons/services.png) no-repeat 235px 10px;	
 }
 .tools {
-	background:#F6F6F6 url(../img/icons/tools.png) no-repeat 235px 10px;	
+	background:#F6F6F6 url(../img/icons/tools.png) no-repeat 230px 10px;	
 }
 
 /*  ----------- contents ----------------  */
@@ -70,6 +70,10 @@ div#grid-results {
 .search-item ul li {
 	list-style:none;
 	margin-bottom:10px;	
+	clear:both;
+}
+.search-item.tools ul li {
+	margin-bottom:20px;	
 }
 .search-item ul a:link,
 .search-item ul a:visited {
@@ -86,6 +90,7 @@ div#grid-results {
 .search-item ul p {
 	padding:0px;
 	margin:0px;
+	font-size:12px;
 }
 .search-item .action {
 	padding-top:10px;
@@ -100,7 +105,7 @@ div#grid-results {
 .search-item .action a.create:link,
 .search-item .action a.create:visited {
 	color:#FFF;
-	background: #FFA635;
+	background:#FFA635;
 	padding:3px 5px;
 	position:absolute;
 	right:10px;
