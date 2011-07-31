@@ -60,18 +60,18 @@
         <ul class="roles no_style">
           <li class="gnav" id="nav-visitors"><h2><a href="">Visitors</a></h2>
               <ul class="megamenu">
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
-                <li><a href="#">Information for residents goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
+                <li><a href="#">Information for visitors goes here</a></li>
               </ul> 
           </li>
           <li class="gnav" id="nav-311"><h2><a href="#">311 Online</a></h2></li>
