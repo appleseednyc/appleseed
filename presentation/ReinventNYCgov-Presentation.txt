@@ -7,25 +7,34 @@ Skin: user centric wrapper
 
 *** Slides 1 ***
 
-Picture of a rotten Apple
+Topic: A rotten apple
 
-On NYC.gov, search and user interface is broken. We know this and this is why we are here.
+Content: (Photo of a rotten apple.) Text: (In the lower left, "Team Apple Seed NYC"
+
+Speaker's notes: 
+
+NYC.gov's user interface and search is broken. We know this and this is why we are here. To illustrate this point, the NYC.gov search for "lost luggage" brought me to the DOT events calendar. Parking brought me to the Partnership for Parks. A search for schools returned the second result as Independent Budget office. This is one rotten apple.
 
 *** Slides 2 ***
 
 Topic: "The Seed"
 
-Content:
+Content: (Photo of a seed.) Text: "Renewal"
 
-(Resources not content!!!)
+Speaker's notes:
+
+To grow a new apple, we must start from a seed. Within the context search on NYC.gov, resources take precedence over human written content. For a new apple to grow, search results must return resources not content.
 
 *** Slides 3 ***
 
-Topic: Modern alternatives 
+Topic: Modern alternatives
 
-Content:
+Content: (screen shots of Utah.gov, Alpha.UK.gov, Search.USA.gov, my.FCC.gov, wdyl.com)
 
-Pictures of Utah.gov, Alpha.UK.gov, Search.USA.gov, my.FCC.gov, wdyl.com
+Speaker's notes:
+
+Around the internets, government websites are starting a new. Curated content sites, weighed down with bureaucratic approval process and burdened with budget cuts, are seen as clunky, dated, and unhelpful. Customizable, constituent centric tools are taking their place. Search.USA.gov, Utah.gov, Alpha.UK.gov and my.FCC.gov are all constituent centric tools. 
+
 
 *** Slides 4 ***
 
@@ -33,7 +42,14 @@ Topic: Our Goal
 
 Content:
 
-(long list of things we want to acomplish)
+0 Breakfast
+1 Consistent UX
+2 Clean Ux
+3 Push & Pull interfaces (SMS, Shareablity, Trigger actions)
+4 Context aware search interfaces
+5 Participatory via commentablity
+
+Speaker's notes:
 
 *** Slides 5 ***
 
@@ -44,7 +60,7 @@ Content:
 - A site for the user that is simple
 - Search Centric
 - Personalized
-- ubiquitious
+- ubiquitous
 - Push & Pull
 - API
 - Eliminates paperwork
