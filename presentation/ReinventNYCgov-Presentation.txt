@@ -53,7 +53,9 @@ Content:
 
 Speaker's notes:
 
-In redesigning NYC.gov, Team Apple Seed's goals are simple. We will win by creating a consistent and clean user interface, offer push and pull systems with context aware search. Note, these systems don't just offer up content. They are a foundation for constituent digital services. Ranging from 311 online rate and report features to a constantly shifting and adapting NYC.gov based on what constituent needs.
+In redesigning NYC.gov, Team Apple Seed's goals are simple. We will win by creating a consistent and clean user interface, offer push and pull systems with context aware search. Note, these systems don't just offer up content. They are a solid foundation for constituent digital services. 
+
+Based on constituent needs, NYC.gov will consistently   Ranging from 311 online rate and report features to a constantly shifting and adapting NYC.gov.
 
 
 *** Slides 5 ***
