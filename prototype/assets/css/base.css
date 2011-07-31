@@ -1,0 +1,169 @@
+/* This stylesheet sets baseline styles used between admin and public 
+----------------------------------------------------------------------*/
+
+body {
+  color: #333333;
+  font: normal 100% Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a, input, select, textarea {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,
+strong, strong *, * strong  { font-weight: bold; }
+em, em *, * em              { font-style: italic; }
+
+img { background-color: transparent; }
+
+abbr,acronym {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+} 
+
+blockquote { margin: 1em; }
+
+caption {
+  margin-bottom:.5em;
+  text-align:center;
+}
+
+p,fieldset,table { margin-bottom:1em; }
+
+.inline { display: inline; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+#staging {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 30px;
+  height: 135px;
+  background: url(/images/shared/staging.png) no-repeat;
+  text-indent: -1000em;
+  z-index: 10000;
+}
+
+#wrapper,
+#header .wrapper,
+#footer .wrapper,
+#navigation .wrapper,
+.breadcrumbs {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* default table styles
+-------------------------------------------------------------------------*/
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+th,td {
+  padding:  2px 2px 2px 5px;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #eee;
+}
+
+/* Cycle classes
+--------------------------------------------------------------------------------*/
+
+tr.light    { background: #fff;     }
+tr.dark,
+li.dark     { background: #f6f6f6;  }
+tr.current  { background: #dedede;  }
+
+/* list styles
+----------------------------------------------------------------------------------*/
+
+.disc         li { list-style-type: disc;        }
+.decimal      li { list-style-type: decimal;     }
+.upper_roman  li { list-style-type: upper-roman; }
+.lower_roman  li { list-style-type: lower-roman; }
+.upper_alpha  li { list-style-type: upper-alpha; }
+.lower_alpha  li { list-style-type: lower-alpha; }
+.no_style     li { list-style-type: none; }
+
+.disc li,
+.no_style li,
+.decimal li,
+.upper_roman li,
+.lower_roman li,
+.upper_alpha li,
+.lower_alpha li {
+  text-align: left !important;
+}
+
+/* overrides for managed content */
+
+.managed ul,
+.managed ol {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+.managed li {
+  margin-bottom: 1em;
+}
+
+.managed ul li { list-style-type: disc; }
+.managed ol li { list-style-type: decimal; }
+
+/* forms
+--------------------------------------------------------------------------------------*/
+
+form label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form textarea {
+  vertical-align: text-top;
+  height: 10em;
+}
+
+.checkbox input,
+.radio input,
+input.checkbox,
+input.radio {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+
+form dl {
+  margin-bottom: 0;
+}
+
+form dt,
+form li label,
+legend {
+  margin-bottom: 0;
+}
+
+form dd {
+  margin-bottom: 0.5em;
+}
+
+fieldset {
+  border: 0;
+/*   width: 100%; */
+}

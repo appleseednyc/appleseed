@@ -1,0 +1,137 @@
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  background: url(../img/header_bg.png) repeat-x #EFEFEF;
+  border-bottom: 1px solid #CCC;
+  overflow: hidden;
+}
+
+header h1,
+header nav {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header h1 a {
+  display: block;
+  text-indent: -9999px;
+  width: 150px;
+  height: 50px;
+  background: url(../img/logo.png) no-repeat;
+}
+
+header nav {
+  float: right;
+  font-size: .9em;
+}
+
+header h1 {
+  font-size: 1em;
+  line-height: 1em;
+  float: left;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 2.3em;
+}
+
+nav li a {
+  color: #333 !important;
+  display: inline-block;
+  margin: .3em 0 0 2em;
+  text-transform: uppercase;
+  color: rgb(0,0,0);
+  font-size: .8em;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+nav li.search a {
+  text-indent: -9999px;
+  background: url(../img/nav_search.png) no-repeat;
+  width: 21px;
+  height: 21px;
+  margin-left: 1em;
+}
+
+section.alerts {
+  background: #EEEEEE;
+  padding: .2em 0;
+  overflow: hidden;
+}
+
+.home ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+section.alerts ul {
+  background: #FFF;
+  padding: .5em .5em;
+  border-radius: 5px;
+}
+
+section.alerts .more {
+  padding-top: .6em;
+  font-size: .9em;
+}
+
+.home form input {
+  font-size: 1.9em;
+  padding: .4em .3em;
+  border: 7px solid rgba(0,0,0,.1);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.home form input.search {
+  width: 89%;
+}
+
+.home form input.button {
+  border: 0;
+}
+
+.temp {
+  font-size: 4em;
+}
+
+.subtitle {
+  display: block;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+.bloomberg {
+  display: inline-block;
+  background: #EFEFEF;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.bloomberg img {
+  float: left;
+  margin-right: 8px;
+}
+
+div#grid-results {
+  margin-left: -13px;
+}
+
+.result {
+  width: 270px;
+  float: left;
+  background: #EEE;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
