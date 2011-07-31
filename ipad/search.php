@@ -6,7 +6,7 @@
     Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov</title>
+  <title>NYC.gov for Tablets - Search</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -26,37 +26,24 @@
 <body ontouchmove="BlockMove(event);">
   <div data-role="page">
     <div data-role="header">
-      <h1>NYC.gov for Tablets</h1>
+      <h1>NYC.gov - Search Results</h1>
     </div>
 
     <div data-role="content">
-      <div style="background-image:url('midtown_sunrise.jpg');">
-        <h3 id="welcome">NYC alerts around your neighborhood:</h3>
-        <div data-role="collapsible" data-collapsed="true" data-theme="e">
-          <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
-          <p>G train being derpy again.</p>
-          <p>Kayne West blogged.</p>
-        </div>
-        <div style="text-align:center;">
-          <input type="search"></input>
-          <button type="button" data-inline="true">Search</button>
-        </div>
+      <div style="text-align:center;">
+        <input type="search"></input>
+        <button type="button" data-inline="true">Search</button>
       </div>
 
-      <h3>Common topics and searches:</h3>
-      <ul data-role="listview" data-inset="true">
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Batman</a></li>
-        <li><a href="#">Parking Tickets</a></li>
-        <li><a href="#">Bedbugs</a></li>
+      <h3>Results for bicycle lanes:</h3>
+      <ul data-role="listview">
+        <li><a href="#">Bike lane painting begins</a></li>
+        <li><a href="#">Bike safety guidelines</a></li>
+        <li><a href="#">Pay for your bike ticket</a></li>
+        <li><a href="#">Bike lane maps</a></li>
       </ul>
-
-      <h3>Highlights:</h3>
-      <div class="ui-grid-b" data-theme="b">
-          <div class="ui-block-a" data-theme="b">
-            FDNY Firefighters put out fire caused by meddling kids.
-          </div>
-      </div>
+      <br />
+      <button type="button">More...</button>
     </div>
 
     <div data-role="footer" style="text-align:center;">
