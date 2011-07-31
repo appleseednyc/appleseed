@@ -1,68 +1,181 @@
+Definitions
+Seed: user action / search query
+Core: is the API
+Skin: user centric wrapper
+
+-=-=- slides by number -=-=-
+
 *** Slides 1 ***
 
+Picture of a rotten Apple
+
+On NYC.gov, search and user interface is broken. We know this and this is why we are here.
 
 *** Slides 2 ***
 
+Topic: "The Seed"
+
+Content:
+
+(Resources not content!!!)
 
 *** Slides 3 ***
 
+Topic: Modern alternatives 
+
+Content:
+
+Pictures of Utah.gov, Alpha.UK.gov, Search.USA.gov, my.FCC.gov, wdyl.com
 
 *** Slides 4 ***
 
+Topic: Our Goal
+
+Content:
+
+(long list of things we want to acomplish)
 
 *** Slides 5 ***
 
+Topic: Government desires / refined goals
+
+Content:
+
+- A site for the user that is simple
+- Search Centric
+- Personalized
+- ubiquitious
+- Push & Pull
+- API
+- Eliminates paperwork
 
 *** Slides 6 ***
+
+Topic: User Context
+
+Content:
+
+- Big Web
+- Little Web
+- Application Friendly
+- SMS
 
 
 *** Slides 7 ***
 
+Topic: Roll
+
+Content:
+
+- Gov 2 Gov
+- Resident
+- Non-Resident
 
 *** Slides 8 ***
 
+Topic: The New Core
+
+Content:
+
+(Screen shot of new NYC.gov.)
 
 *** Slides 9 ***
+
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 10 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 11 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 12 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 13 ***
 
+Topic: The tourist...
+
+Content:
 
 
 *** Slides 14 ***
+
+Topic: The tourist...
+
+Content:
 
 
 
 *** Slides 15 ***
 
+Topic: The tourist...
+
+Content:
+
+
+
 
 
 *** Slides 16 ***
+
+Topic: ...
+
+Content:
+
+
 
 
 
 *** Slides 17 ***
 
+Topic: 
+
+Content:
+
+
+
 
 
 *** Slides 18 ***
+
+Topic: 
+
+Content:
+
+
 
 
 
 *** Slides 19 ***
 
+Topic: 
+
+Content:
+
+
+
 
 
 *** Slides 20 ***
+
+Topic: 
+
+Content:
+
+
