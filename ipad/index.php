@@ -26,21 +26,21 @@
 <body ontouchmove="BlockMove(event);">
   <div data-role="page">
     <div data-role="header">
-      <h1>NYC.gov for Tablets</h1>
+      <h1>NYC.gov Mobile</h1>
     </div>
 
     <div data-role="content">
-      <div style="background-image:url('midtown_sunrise.jpg');">
-        <h3 id="welcome">NYC alerts around your neighborhood:</h3>
-        <div data-role="collapsible" data-collapsed="true" data-theme="e">
-          <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
-          <p>G train being derpy again.</p>
-          <p>Kayne West blogged.</p>
-        </div>
-        <div style="text-align:center;">
-          <input type="search"></input>
-          <button type="button" data-inline="true">Search</button>
-        </div>
+      <h3 id="welcome">NYC alerts around your neighborhood:</h3>
+      <div data-role="collapsible" data-collapsed="true" data-theme="e">
+        <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
+        <ul>
+          <li>G train being derpy again.</li>
+          <li>Kayne West blogged.</li>
+        </ul>
+      </div>
+      <div style="text-align:center;">
+        <input id ="search_box" type="search"></input>
+        <button type="button" data-inline="true" onClick="parent.location='search.php?keyword=bicycle%20lanes'">Search</button>
       </div>
 
       <h3>Common topics and searches:</h3>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div data-role="footer" style="text-align:center;">
+    <div style="text-align:center;" data-role="footer" data-position="fixed">
       <div data-role="controlgroup" data-type="horizontal" style="margin-top:15px;">
         <button type="button" data-type="horizontal" data-theme="a">Residents</button>
         <button type="button" data-type="horizontal" data-theme="a">Visitors</button>

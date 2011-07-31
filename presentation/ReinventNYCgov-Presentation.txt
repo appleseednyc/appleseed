@@ -53,10 +53,9 @@ Content:
 
 Speaker's notes:
 
-In redesigning NYC.gov, Team Apple Seed's goals are simple. We will win by creating a consistent and clean user interface, offer push and pull systems with context aware search. Note, these systems don't just offer up content. They are a solid foundation for constituent digital services. 
+In redesigning NYC.gov, Team Apple Seed's goals are simple. We will win by creating a consistent and clean user interface, offer push and pull systems with context aware search. Note, these systems don't just offer up content. They are a solid foundation for adaptive constituent digital services. 
 
-Based on constituent needs, NYC.gov will consistently   Ranging from 311 online rate and report features to a constantly shifting and adapting NYC.gov.
-
+Just as NYCStat has made the City more responsive to its users, we invision an NYC.gov that is adaptive, responsive and personable.  
 
 *** Slides 5 ***
 
@@ -74,20 +73,19 @@ Content:
 
 Speaker's notes:
 
-Through out the last 24 hours, we asked every government official for their input and their advice on our platform. We received a frank viewpoint. They said, "Make it simple", "Make it Personalizable", "Look at 311", "Make it Gov 2 Gov", and "the Mayor like his iPad".
+Through out the last 24 hours, we asked every government official for their input and their advice on our platform. We received a frank viewpoint. They said, "Make it simple", "have it work for the citizen", "Look at 311", "Make it Gov 2 Gov". Oh and "the Mayor likes his iPad".
 
 
 *** Slides 6 ***
 
-Topic: User Context & Roll
+Topic: User Matrix
 
 Content:
 
 User Context
 - Big Web
-- Little Web
-- Application Friendly
-- SMS
+- Little Web / Application friendly
+- SMS friendly
 
 User Roll
 - Gov 2 Gov
@@ -97,7 +95,7 @@ User Roll
 
 Speaker's notes:
 
-To accomplish our goals we sought out four user context: the big web, aka the desktop; the little web, the mobile browser; a restful application interface, and a short messaging service. We combined this with the three basic user rolls: Gov2Gov, a la 311; an NYC Resident; a non-NYC resident. 
+To accomplish our goals we sought out three user contexts: the big web, aka the desktop; the little web, the mobile browser, and "App" friendly; short messaging service. We combined this with the three basic user rolls: Gov-2-Gov, a la 311; an NYC Resident; a non-NYC resident. 
 
 *** Slides 7 ***
 
