@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+div#grid-results {
+  margin-left: -13px;
+  margin-top:30px;
+}
+.search-item {
+  width: 240px;
+  float: left;
+  border-top:1px solid #999;
+  background: #F6F6F6;
+  padding: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size:14px;
+  color:#666;
+  font-weight: lighter;
+  position:relative;
+}
+
+/*  ----------- icons by type ----------------  */
+.forms {
+	background:#F6F6F6 url(../img/icons/forms.png) no-repeat 235px 10px;	
+}
+.guides {
+	background:#F6F6F6 url(../img/icons/guides.png) no-repeat 240px 10px;	
+}
+.places {
+	background:#F6F6F6 url(../img/icons/places.png) no-repeat 240px 10px;	
+}
+.docs {
+	background:#F6F6F6 url(../img/icons/docs.png) no-repeat 240px 10px;	
+}
+.discussions {
+	background:#F6F6F6 url(../img/icons/discussions.png) no-repeat 230px 10px;	
+}
+.questions {
+	background:#F6F6F6 url(../img/icons/questions.png) no-repeat 235px 10px;	
+}
+.services {
+	background:#F6F6F6 url(../img/icons/services.png) no-repeat 235px 10px;	
+}
+.tools {
+	background:#F6F6F6 url(../img/icons/tools.png) no-repeat 235px 10px;	
+}
+
+/*  ----------- contents ----------------  */
+.search-item .head {
+	display:block;
+	padding-bottom:5px;
+	font-size:13px;	
+}
+.search-item h3 {
+	color:#FFA635;
+	display:inline;
+	padding-bottom:10px;
+	font-size:13px;
+}
+.search-item .result-number {
+	color: #999;
+	font-weight:normal;
+	padding-left:5px;
+	font-size:13px;
+	font-weight:lighter;
+}
+.search-item ul {
+	list-style:none;
+	padding:0px;	
+}
+.search-item ul li {
+	list-style:none;
+	margin-bottom:10px;	
+}
+.search-item ul a:link,
+.search-item ul a:visited {
+	list-style:none;
+	padding:0px;
+	color:#666;	
+}
+.search-item ul h4 {
+	color:#18A3CB;
+	padding:0px 0px 5px 0px;
+	margin:0px;
+	font-weight:normal;
+}
+.search-item ul p {
+	padding:0px;
+	margin:0px;
+}
+.search-item .action {
+	padding-top:10px;
+	font-size:12px;	
+}
+.search-item .action a:link,
+.search-item .action a:visited {
+	color:#FFA635;
+
+}
+
+.search-item .action a.create:link,
+.search-item .action a.create:visited {
+	color:#FFF;
+	background: #FFA635;
+	padding:3px 5px;
+	position:absolute;
+	right:10px;
+}
+
+
+
+.map {
+	margin: 5px 0px 0px -15px;	
+}

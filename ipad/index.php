@@ -6,7 +6,7 @@
     Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov</title>
+  <title>NYC.gov Mobile</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -23,32 +23,32 @@
     }
   </script>
 </head>
-<body ontouchmove="BlockMove(event);">
+<body>
   <div data-role="page">
     <div data-role="header">
-      <h1>NYC.gov for Tablets</h1>
+      <h1>NYC.gov Mobile</h1>
     </div>
 
     <div data-role="content">
-      <div style="background-image:url('midtown_sunrise.jpg');">
-        <h3 id="welcome">NYC alerts around your neighborhood:</h3>
-        <div data-role="collapsible" data-collapsed="true" data-theme="e">
-          <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
-          <p>G train being derpy again.</p>
-          <p>Kayne West blogged.</p>
-        </div>
-        <div style="text-align:center;">
-          <input type="search"></input>
-          <button type="button" data-inline="true">Search</button>
-        </div>
+      <h3 id="welcome">NYC alerts around your neighborhood:</h3>
+      <div data-role="collapsible" data-collapsed="true" data-theme="e">
+        <h3>Alerts for <?php echo date('l \t\h\e jS'); ?></h3>
+        <ul>
+          <li>G train being derpy again.</li>
+          <li>Kayne West blogged.</li>
+        </ul>
+      </div>
+      <div style="text-align:center;">
+        <input id ="search_box" type="search"></input>
+        <button type="button" data-inline="true" onClick="parent.location='search.php?keyword=bicycle%20lanes'">Search</button>
       </div>
 
       <h3>Common topics and searches:</h3>
       <ul data-role="listview" data-inset="true">
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Batman</a></li>
-        <li><a href="#">Parking Tickets</a></li>
-        <li><a href="#">Bedbugs</a></li>
+        <li><a href="search.php?keyword=jobs">Jobs</a></li>
+        <li><a href="search.php?keyword=batman">Batman</a></li>
+        <li><a href="search.php?keyword=parking%20tickets">Parking Tickets</a></li>
+        <li><a href="search.php?keyword=bedbugs">Bedbugs</a></li>
       </ul>
 
       <h3>Highlights:</h3>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div data-role="footer" style="text-align:center;">
+    <div style="text-align:center;" data-role="footer" data-position="fixed">
       <div data-role="controlgroup" data-type="horizontal" style="margin-top:15px;">
         <button type="button" data-type="horizontal" data-theme="a">Residents</button>
         <button type="button" data-type="horizontal" data-theme="a">Visitors</button>

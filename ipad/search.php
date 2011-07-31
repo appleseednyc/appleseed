@@ -6,7 +6,7 @@
     Reinvent NYC.gov Hackathon
 -->
 <head>
-  <title>NYC.gov for Tablets - Search</title>
+  <title>NYC.gov Mobile</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -31,22 +31,58 @@
 
     <div data-role="content">
       <div style="text-align:center;">
-        <input type="search"></input>
+        <?php echo '<input type="search" value="' . htmlspecialchars($_GET["keyword"]) . '"></input>' ?>
         <button type="button" data-inline="true">Search</button>
       </div>
 
-      <h3>Results for bicycle lanes:</h3>
+      <h3>Results for <?php echo htmlspecialchars($_GET["keyword"]) ?>:</h3>
       <ul data-role="listview">
-        <li><a href="#">Bike lane painting begins</a></li>
-        <li><a href="#">Bike safety guidelines</a></li>
-        <li><a href="#">Pay for your bike ticket</a></li>
-        <li><a href="#">Bike lane maps</a></li>
+        <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+          <div class="ui-btn-inner ui-li">
+            <div class="ui-btn-text"><a href="#" class="ui-link-inherit">
+              <img src="images/lane_painting.jpg" class="ui-li-thumb">
+              <h3 class="ui-li-heading">Bike Lane Painting Begins</h3>
+              <p class="ui-li-desc">This Saturday, bike lanes are gonna be painted, so move your car out of the way plz.</p></a>
+            </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+          </div>
+        </li>
+        <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+          <div class="ui-btn-inner ui-li">
+            <div class="ui-btn-text"><a href="#" class="ui-link-inherit">
+              <img src="images/lane_sizes.gif" class="ui-li-thumb">
+              <h3 class="ui-li-heading">Bike Safety Guidelines</h3>
+              <p class="ui-li-desc">In partnership with the Tempe Bicycle Action Group (TBAG), NYC has released a set of guidelines to ride safely in New York City.</p></a>
+            </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+          </div>
+        </li>
+        <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+          <div class="ui-btn-inner ui-li">
+            <div class="ui-btn-text"><a href="#" class="ui-link-inherit">
+              <!--<img src="images/lane_sizes.gif" class="ui-li-thumb">-->
+              <h3 class="ui-li-heading">Online Bike Ticket Payment Form</h3>
+              <p class="ui-li-desc">Give us all your money, we know you have some saved from not paying for gas.</p></a>
+            </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+          </div>
+        </li>
+        <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+          <div class="ui-btn-inner ui-li">
+            <div class="ui-btn-text"><a href="#" class="ui-link-inherit">
+              <img src="images/nyc_bike_map.gif" class="ui-li-thumb">
+              <h3 class="ui-li-heading">NYC Bike Lane Maps</h3>
+              <p class="ui-li-desc">We gave a dude a bunch of crayons and he made some maps.  They're probably not accurate, but here's the scans, enjoy!</p></a>
+            </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+          </div>
+        </li>
       </ul>
       <br />
       <button type="button">More...</button>
     </div>
 
-    <div data-role="footer" style="text-align:center;">
+    <div style="text-align:center;" data-role="footer" data-position="fixed">
       <div data-role="controlgroup" data-type="horizontal" style="margin-top:15px;">
         <button type="button" data-type="horizontal" data-theme="a">Residents</button>
         <button type="button" data-type="horizontal" data-theme="a">Visitors</button>

@@ -1,34 +1,82 @@
+body {
+	background : #f5f3f2 url(../img/background_stripes.png) top center repeat-y;
+
+}
+
+
 .wrapper {
   margin: 0 auto;
-  width: 90%;
+  width: 1000px;
+border-width : 0 1px;
 }
 
-header {
-  background: url(../img/header_bg.png) repeat-x #EFEFEF;
+/* topnav
+--------------------------------------------------------------------------------------*/
+
+
+
+
+#topnav nav {
+  background-color : #EFEFEF;
   border-bottom: 1px solid #CCC;
-  overflow: hidden;
+width : 100%;
+
+  display: inline-block;
+  vertical-align: top;
+
 }
 
-header h1,
-header nav {
+#topnav ul {
+float : right;
+margin-right : 20px;
+}
+
+
+
+#topnav nav li {
+line-height : 1.5em;
+font-size : .9em;
+}
+
+
+/* identity nav
+--------------------------------------------------------------------------------------*/
+
+.identity-nav {
+background-color : #fff;
+}
+
+
+.identity-nav nav {
+margin-right : 20px;
+float : right;
+}
+
+
+
+#heading h1,
+#heading nav {
   display: inline-block;
   vertical-align: top;
 }
 
-header h1 a {
+
+#heading h1 {
+margin : 0;
+}
+
+#heading h1#logo a {
   display: block;
   text-indent: -9999px;
-  width: 150px;
-  height: 50px;
+  width: 187px;
+  height: 66px;
   background: url(../img/logo.png) no-repeat;
+margin-left : 19px; 
+margin-top : 21px;
 }
 
-header nav {
-  float: right;
-  font-size: .9em;
-}
 
-header h1 {
+#heading h1 {
   font-size: 1em;
   line-height: 1em;
   float: left;
@@ -63,15 +111,92 @@ nav li.search a {
 }
 
 section.alerts {
+  clear: both;
   background: #EEEEEE;
   padding: .2em 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .home ul {
+  position: relative;
+  z-index: 55;
   margin-left: 0;
   padding-left: 0;
 }
+
+.home ul.megamenu {
+  position: absolute;
+  padding: 1em;
+  background: #444;
+  margin-top: -10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.home nav li:hover > .megamenu {
+  display: block;
+}
+
+.home ul.megamenu li a {
+  color: #EFEFEF !important;
+  text-shadow: -1px 0 0 #000;
+  float: left;
+  width: 220px;
+  line-height: 1.1em;
+}
+
+
+
+/* search
+--------------------------------------------------------------------------------------*/
+
+
+
+#heading section.search {
+  background: url(../img/search_photo.jpg) no-repeat;
+height : 337px;
+
+}
+
+
+
+#findit_chzn .chzn-choices {
+width : 554px;
+margin : 0 auto;
+}
+
+
+
+.search-item {
+  width: 270px;
+  float: left;
+  background: #EEE;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.home #findit {
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* alerts
+--------------------------------------------------------------------------------------*/
+
+
 
 section.alerts ul {
   background: #FFF;
@@ -127,16 +252,5 @@ div#grid-results {
   margin-left: -13px;
 }
 
-.search-item {
-  width: 270px;
-  float: left;
-  background: #EEE;
-  padding: 10px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
 
-.home #findit {
-  width: 100%;
-  display: block;
-}
+
