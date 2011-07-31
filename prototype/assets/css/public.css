@@ -47,11 +47,51 @@ background-color : #fff;
 }
 
 
+
+
 .identity-nav nav {
 margin-right : 20px;
 float : right;
+margin-top : 15px;
 }
 
+
+
+.identity-nav li h2 {
+font : normal normal normal 25px/23px "Helvetica Neue";
+font-style : italic;
+}
+
+
+.identity-nav .tagline {
+font : normal normal normal 20px/23px "Helvetica Neue";
+display : inline-block;
+font-style : italic;
+font-variant : light;
+color : #6f6f6f;
+margin-top : 41px;
+margin-left : 35px;
+}
+
+.identity-nav #nav-visitors a {
+color : #0094c6 !important;
+}
+
+
+.identity-nav #nav-311 a {
+color : #ff6d00  !important;
+}
+
+
+.identity-nav #nav-mynyc a {
+color : #ffa900  !important;
+}
+
+.identity-nav #nav-visitors a:hover, 
+.identity-nav #nav-311 a:hover, 
+.identity-nav #nav-mynyc a:hover {
+color : #000 !important;
+}
 
 
 #heading h1,
@@ -73,6 +113,7 @@ margin : 0;
   background: url(../img/logo.png) no-repeat;
 margin-left : 19px; 
 margin-top : 21px;
+margin-bottom : 22px;
 }
 
 
@@ -102,6 +143,19 @@ nav li a {
   text-shadow: 0 1px 0 #FFFFFF;
 }
 
+nav li#nav-visitors a {
+margin-left : 0;
+}
+
+#identity-nav nav li a, 
+#identity-nav nav li, 
+#identity-nav nav ul, 
+#identity-nav nav h2 {
+line-height : 0 !important;
+margin : 0 !important;
+padding : 0 !important;
+}
+
 nav li.search a {
   text-indent: -9999px;
   background: url(../img/nav_search.png) no-repeat;
@@ -121,7 +175,6 @@ section.alerts {
 
 .home ul {
   position: relative;
-  z-index: 55;
   margin-left: 0;
   padding-left: 0;
 }
@@ -133,7 +186,10 @@ section.alerts {
   margin-top: -10px;
   border-radius: 5px;
   display: none;
+z-index : 70;
 }
+
+
 
 .home nav li:hover > .megamenu {
   display: block;
@@ -153,6 +209,11 @@ section.alerts {
 --------------------------------------------------------------------------------------*/
 
 
+#searchbox {
+padding-top : 175px;
+margin-bottom : 500px
+}
+
 
 #heading section.search {
   background: url(../img/search_photo.jpg) no-repeat;
@@ -167,6 +228,9 @@ width : 554px;
 margin : 0 auto;
 }
 
+#findit_chzn {
+margin : 0;
+}
 
 
 .search-item {
