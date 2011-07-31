@@ -7,7 +7,7 @@
 </section>
 <section class="results">
   <div class="wrapper">
-    <div class="focus"> sdfsgasdg </div>
+    <div class="focus">123 Results</div>
     <div id="grid-results">
     
       <div class="search-item forms">
