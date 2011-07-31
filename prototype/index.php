@@ -2,10 +2,7 @@
   
   <section class="search">
     <div class="wrapper">
-      <form action="/search" method="get"> 
-        <label class="placeholder" for="global-search-field">Whatcha lookin' for?</label> 
-        <div><input type="text" class="search" name="q" /> <input type="submit" value="Find it!" class="button" /> </div> 
-      </form>
+      <?php include("_select.php"); ?>
       
       <div class="popular-searches">
         <ul>
