@@ -1,4 +1,4 @@
-  <div>
+  <div id="searchbox">
     <select id="findit" title="Tell us how we can help you today ..." class="chzn-select" multiple tabindex="6">
       <option value=""></option>
 
@@ -58,6 +58,9 @@
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Business+Assistance&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help starting or expanding a small business.</option>
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Abortion&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get abortion counseling and services.</option>
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Sprinkler+Area+in+a+Park&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find an area in a park with water sprinklers.</option>
+</optgroup>
+<optgroup label="Education and Employment">
+<option data-link="http://betanyc.org/appleseed/prototype/results_2.php">Register a student for school.</option>
 </optgroup>
 <optgroup label="Transportation, Streets, and Sidewalks">
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+Cross+Streets&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find the cross streets for an address.</option>
@@ -710,6 +713,8 @@
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Pharmacy+License&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a pharmacist's license.</option>
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Land+Surveyor+License&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Apply for a land surveyor's license.</option>
 </optgroup>
+
+
 <optgroup label="Social Services">
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Immigration+Assistance+from+Community-Based+Organizations&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get help for an immigrant, including legal assistance, English or citizenship classes, and counseling. </option>
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Social+Security+Card+Information&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Get information about applying for, changing or replacing a Social Security card, or getting a new Social Security number.</option>

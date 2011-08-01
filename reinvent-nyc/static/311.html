@@ -20,21 +20,27 @@
 
       function gotoArticle(article_id) {
       
+      /* */
       $.ajax({ url: '../?d=' + article_id,
                dataType: 'json',
                async: false,
                success: function(data) { article = data; } });
-      
+      /* */
       //article = [{"description": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "description_html": "The City provides locations of Medicaid offices and information about how to \napply for the Medicaid Program. ", "url": "http:\/\/www.nyc.gov\/apps\/311\/allServices.htm?requestType=topService&serviceName=Find+a+Medicaid+Office&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click", "service_name": "Find a Medicaid Office", "web_actions": [{"url": "http:\/\/www.nyc.gov\/html\/hra\/html\/directory\/public_health.shtml", "type": "Webpage", "label": "Get information about Medicaid and other public health insurance programs."}, {"url": "", "type": "Webpage", "label": "Use the ACCESS NYC benefit tool to:"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/AutomaticLogon.jsp", "type": "Webpage", "label": "Pre-screen for Medicaid and other programs"}, {"url": "https:\/\/a858-ihss.nyc.gov\/ihss1\/en_US\/IHSS_howToApplyHomePage.do?programInfoID=3&__o3rpu=IHSS_howToApplyProgramListHomePage.do", "type": "Webpage", "label": "Learn how to apply for Medicaid"}], "brief_description": "Find a Medicaid office.", "expiration": "12-31-2099T00:00:00Z", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "categories": [{"category_name": "Health and Medicine"}]}];
       $('#article-content').empty();
       $('#article-title').text(article[0]['service_name']);
       $('#article-content').append(article[0]['description_html']);
       
-      var action_buttons = $('<div data-role="controlgroup" data-theme="e"></div>');
+      var action_buttons = $('<div data-role="controlgroup"></div>');
       $('#article-content').append(action_buttons);
       $.each(article[0]['web_actions'], function(index, value) {
-        action_buttons.append($('<a href="' + article[0]['web_actions'][index]['url'] + '" data-icon="arrow-r" data-role="button">' + article[0]['web_actions'][index]['label'] + '</a>'));
+        action_buttons.append($('<a href="' + article[0]['web_actions'][index]['url'] + '" data-theme="e" data-icon="arrow-r" data-role="button">' + article[0]['web_actions'][index]['label'] + '</a>'));
       });
+
+
+      var feedback_buttons = $('<br/><center><div data-type="horizontal" data-role="controlgroup"><a href="#" data-role="button" data-theme="a">Useful</a><a href="#" data-theme="c" data-role="button">Not useful</a><a href="#" data-theme="b" data-role="button">Share</a></div></center>');
+      $('#article-content').append(feedback_buttons);
+      
 
       $('#article').page();
       $('#article').page('destroy').page();
@@ -43,11 +49,12 @@
 
       function goto(str) {
 
+      /* */
         $.ajax({ url: '../?d=' + str,
                  success: function(data) { results = data; },
                  async: false,
                  dataType: 'json'});
-       
+       /* */
        // results = [{"service_name": "Find a Medicaid Office", "brief_description": "Find a Medicaid office.", "id": "20040622-E1264E4C-C464-11D8-B9A2-9271511716AA", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Museum", "brief_description": "Find a museum.", "id": "20040804-CF9ED7F4-E65E-11D8-B168-90E859C4E89A", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Adult Immunization Clinic", "brief_description": "Find a clinic for adult immunizations.", "id": "20100309-9C4DEB68-2B97-11DF-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Public Ice Skating Rink", "brief_description": "Get information about public ice skating rinks.", "id": "20031215-7EA34EB8-2F19-11D8-9FC7-C2B665DB9DD7", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Sexually Transmitted Disease Test and Treatment", "brief_description": "Get STD testing and treatment.", "id": "20110214-6B3278D8-3883-11E0-BC2C-96DAE110FEB8", "expiration": "2099-12-31T00:00:00Z"}, {"service_name": "Find a Parent Coordinator", "brief_description": "Find a Parent Coordinator in a public school to address parent concerns.", "id": "2003-09-04-13-00-00_000010083f576ccc4000e88b", "expiration": "2099-12-31T00:00:00Z"}];
         // We remove the existing content.
         $('#results-content').empty()

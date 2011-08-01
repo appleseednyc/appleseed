@@ -7,7 +7,7 @@
 </section>
 <section class="results">
   <div class="wrapper">
-    <div class="focus"> sdfsgasdg </div>
+    <div class="focus">123 Results</div>
     <div id="grid-results">
     
       <div class="search-item forms">
@@ -15,7 +15,7 @@
           <h3>Forms</h3>
           <span class="result-number">13 results</span> </div>
         <ul>
-          <li><a href="">
+          <li><a href="http://betanyc.org/appleseed/prototype/school/">
             <h4>Schools registration form</h4>
             <p>For information about how to register a child for school...</p>
             </a> </li>
