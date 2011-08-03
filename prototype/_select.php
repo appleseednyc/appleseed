@@ -2,7 +2,9 @@
     <select id="findit" title="Tell us how we can help you today ..." class="chzn-select" multiple tabindex="6">
       <option value=""></option>
 
-
+	<optgroup label="Full Search">
+	<option data-link="http://betanyc.org/appleseed/prototype/results_2.php">See all search results for school</option>
+</optgroup>	
 <optgroup label="Find something">
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Medicaid+Office&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a Medicaid office.</option>
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Museum&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find a museum.</option>
@@ -60,7 +62,7 @@
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+a+Sprinkler+Area+in+a+Park&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find an area in a park with water sprinklers.</option>
 </optgroup>
 <optgroup label="Education and Employment">
-<option data-link="http://betanyc.org/appleseed/prototype/results_2.php">Register a student for school.</option>
+<option data-link="http://betanyc.org/appleseed/prototype/school/">Register a student for school.</option>
 </optgroup>
 <optgroup label="Transportation, Streets, and Sidewalks">
 <option data-link="http://www.nyc.gov/apps/311/allServices.htm?requestType=topService&serviceName=Find+Cross+Streets&WT.mc_id=311_API_ContentItem&WT.mc_ev=Click">Find the cross streets for an address.</option>

@@ -50,15 +50,15 @@ background-color : #fff;
 
 
 .identity-nav nav {
-margin-right : 20px;
+margin-right : 27px;
 float : right;
-margin-top : 15px;
+margin-top : 12px;
 }
 
 
 
 .identity-nav li h2 {
-font : normal normal normal 25px/23px "Helvetica Neue";
+font : normal normal normal 27px/23px "Helvetica Neue";
 font-style : italic;
 }
 
@@ -71,6 +71,10 @@ font-variant : light;
 color : #6f6f6f;
 margin-top : 41px;
 margin-left : 35px;
+}
+
+.identity-nav li a {
+text-transform : none;
 }
 
 .identity-nav #nav-visitors a {

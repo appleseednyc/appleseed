@@ -2,7 +2,7 @@
 
 <section class="search-terms">
   <div class="wrapper">
-    <h2>How do I register for a school<span></span></h2>
+    <h2>School<span></span></h2>
   </div>
 </section>
 <section class="results">
